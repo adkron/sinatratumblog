@@ -1,0 +1,19 @@
+#main {
+	background-color: black;
+	color: white;
+}
+
+.post_title {
+	color: blue;
+}
+
+.post_body {
+	text-indent: 5em;
+	color: yellow;
+}
+
+.post {
+	background-color: gray;
+	margin-left: 40%;
+	margin-right: 40%;
+}
