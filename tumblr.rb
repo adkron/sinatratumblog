@@ -30,8 +30,8 @@ get '/' do
 	erb :index
 end
 
-post '/post' do
-		until Post.count(:all) <= 5
+post '/' do
+		until Post.count(:all) < 5
 			Post.delete(Post.find(:first))
 		end
 		@post = Post.new(:title => params[:title], :body => params[:body])
