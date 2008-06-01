@@ -1,7 +1,7 @@
 <% @posts.each do |post| %>
 	<div class="post">
-		<h1 class="post_title"><%= post.title %></h1>
-		<p class="post_body"><%= post.body %></p>
+		<h1 class="post_title"><%= h post.title %></h1>
+		<p class="post_body"><%= h post.body %></p>
 	</div>
 <% end %>
 

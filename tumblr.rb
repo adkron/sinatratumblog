@@ -2,6 +2,8 @@ require "rubygems"
 require "sinatra"
 require "active_record"
 
+include ERB::Util
+
 ActiveRecord::Base.establish_connection(
    :adapter  => "sqlite3",
    :database => "tumblr.sqlite3"
