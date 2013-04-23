@@ -1,12 +1,12 @@
 <% @posts.each do |post| %>
-	<div class="post">
-		<h1 class="post_title"><%= h post.title %></h1>
-		<p class="post_body"><%= h post.body %></p>
-	</div>
+  <div class="post">
+    <h1 class="post_title"><%= h post.title %></h1>
+    <p class="post_body"><%= h post.body %></p>
+  </div>
 <% end %>
 
 <form action="/" method="post">
-	<label for="title">Title:</label><input id="title" name="title" type="title" /><br/>
-	<label for="body">Body:</label><textarea rows="3" cols="20" id="body" name="body" type="body"></textarea><br/>
-	<input id="post_submit" name="commit" type="submit" value="Submit" /><br/>
+  <label for="title">Title:</label><input id="title" name="title" type="title" /><br/>
+  <label for="body">Body:</label><textarea rows="3" cols="20" id="body" name="body" type="body"></textarea><br/>
+  <input id="post_submit" name="commit" type="submit" value="Submit" /><br/>
 </form>
